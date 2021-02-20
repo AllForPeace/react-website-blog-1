@@ -3,9 +3,9 @@ const Navbar = () => {
         <div className="navbar">
             <nav>
                 <h2 id="nav-logo">Nischal's Blog</h2>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#">Blog</a>
+                <a id="about" href="#">About</a>
+                <a id="contact" href="#">Contact</a>
+                <a id="blog" href="#">Blog</a>
 
                 {/* <a href="#">Log in</a>
                 <a href="#">Sign up</a> */}

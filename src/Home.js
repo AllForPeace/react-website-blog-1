@@ -20,8 +20,7 @@ const Home = () => {
 
     return ( 
         <div className="homePage">
-            <h1>Yo Whatsapp!</h1>
-            <h2>All Blogs</h2>
+            <h1>All Blogs</h1>
             {blogs && blogs.map((blog) => (
                <article className="single-blog" key = {blog.id}>
                     <h2 className="title"> { blog.title.toUpperCase() }</h2>

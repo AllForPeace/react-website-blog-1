@@ -5,7 +5,9 @@ body {
 
 /* Navbar styling */
 
-.navbar {
+.navbar nav {
+  display: flex;
+  align-items: center;
   margin: 20px auto;
   padding-left: 10px;
   margin-top: 0;
@@ -13,13 +15,37 @@ body {
 }
 
 .navbar a {
+  /* position: relative; */
+  font-family: Quicksand;
+  font-weight: 500;
   text-decoration: none;
   margin-right: 10px;
+  color: #fff;
+  height: 100%;
+  display: block;
+  padding: 0 auto;
+  text-shadow: 1px 1px 5px rgb(199, 199, 199);
 }
 
 #nav-logo {
+  font-family: Shippori Mincho;
   display: inline-block;
   margin-right: 50%;
+}
+
+#about {
+  background: #f0d032;
+  height: 100%;
+}
+#contact {
+  background: #9009eb;
+  top: 0;
+  left: 85px;
+}
+#blog {
+  background: #11e481; 
+  top: 0;
+  left: 90px;
 }
 
 /* Home Page styling */
@@ -37,12 +63,16 @@ background: rgb(255, 255, 255);
 }
 
 .single-blog h2.title {
+  font-family: Hind;
+  font-weight: 300;
  font-size: 50px;
  margin-bottom: 0;
 }
 
 .single-blog .body {
   margin-bottom: 30px;
+  font-family: Hind;
+  font-weight: 300;
 }
 
 .single-blog .posted-on {
@@ -52,6 +82,6 @@ background: rgb(255, 255, 255);
 
 .single-blog .author {
   color: #bbb;
-  margin-bottom: 40px;
-  font-size: 15px;
+  margin: 40px 10px;
+  font-size: 13px;
 }
