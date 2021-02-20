@@ -27,3 +27,31 @@ body {
 .homePage {
   padding: 0 20px;
 }
+
+/* Individual blog styling */
+
+.single-blog {
+ margin: 30px 0;
+border-bottom: 1px solid #eee;
+background: rgb(255, 255, 255);
+}
+
+.single-blog h2.title {
+ font-size: 50px;
+ margin-bottom: 0;
+}
+
+.single-blog .body {
+  margin-bottom: 30px;
+}
+
+.single-blog .posted-on {
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.single-blog .author {
+  color: #bbb;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
