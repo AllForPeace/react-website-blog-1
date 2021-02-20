@@ -1,9 +1,29 @@
+body {
+  margin: 0;
+  padding: 0 3px;
+}
+
 /* Navbar styling */
 
 .navbar {
+  margin: 20px auto;
+  padding-left: 10px;
+  margin-top: 0;
+  border-bottom: 1px solid #eee;
+}
 
+.navbar a {
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 #nav-logo {
   display: inline-block;
+  margin-right: 50%;
+}
+
+/* Home Page styling */
+
+.homePage {
+  padding: 0 20px;
 }
