@@ -9,10 +9,10 @@ const Navbar = () => {
           <li><a id="blog" href="#">Blog</a></li>
         </ul>  
       </nav>
-      <div className="login">
+      {/* <div className="login">
         <li><a id="log-in" href="#">Log in</a></li>
           <li><a id="sign-up" href="#">Sign up</a></li>
-        </div>
+        </div> */}
     </div>
   );
 };
