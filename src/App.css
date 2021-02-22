@@ -11,9 +11,10 @@ body {
 
 .navbar nav {
   position: relative;
-  margin: 20px auto;
+  margin: 40px auto;
   padding-left: 10px;
   margin-top: 0;
+  box-sizing: border-box;
   border-bottom: 1px solid #eee;
   width: 80%;
 }
@@ -24,6 +25,7 @@ body {
 }
 
 .navbar ul {
+  display: flex;
   float: right;
   margin: 0;
   padding: 0;
@@ -38,35 +40,45 @@ body {
   font-weight: 500;
   text-align: center;
   text-decoration: none;
+  
   margin: 0;
-  padding: 20px 5px;
-  /* padding-top:23px; */
-  padding-bottom:25px; 
+  padding: 23px 5px;
+
   width:80px;
   color: #fff;
   display: inline-block;
   padding: 0 auto;
   text-shadow: 1px 1px 5px rgb(199, 199, 199);
+  transition: all 0.2s ease-out;
 }
 
 #nav-logo {
   font-family: Shippori Mincho;
   display: inline-block;
-  margin-top: 10px;
-  margin-right: 30%;
+  margin: 10px 0;
 }
 
 #about {
-  background: #f0d032;
+  background: #ffe046;
   right: 0%;
 }
+
+#about:hover {
+  font-size: 18px;
+}
 #contact {
-  background: #9009eb;
+  background: #ac4ae6;
   right: 0%;
+}
+#contact:hover {
+  font-size: 18px;
 }
 #blog {
   background: #08e47d; 
   right: 0%;
+}
+#blog:hover {
+  font-size: 18px;
 }
 #log-in {
   background: #fc2403;
