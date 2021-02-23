@@ -1,6 +1,14 @@
-import { Link } from "react-router-dom";
+import { useState } from 'react'
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
+
+  const [mobileMenuClicked, setMclick] = useState(false);
+
+  const mobileMenuExpand = () => {
+    setMclick(!mobileMenuClicked);
+  };
+  
   return (
     <div className="navbar">
       <nav>
@@ -27,7 +35,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <span className="mobile-menu"><i className="fas fa-bars"></i></span>
+        <span className={"mobile-menu "} onClick={mobileMenuExpand}><i className={ mobileMenuClicked ? "fas fa-times" : "fas fa-bars"}></i></span>
       </nav>
       {/* <div className="login">
         <li><a id="log-in" href="#">Log in</a></li>
