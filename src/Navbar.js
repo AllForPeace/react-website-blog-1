@@ -5,10 +5,10 @@ const Navbar = () => {
     <div className="navbar">
       <nav>
         <h2 id="nav-logo">Nischal's Blog</h2>
-        <ul>
+        <ul class="collapse">
           <li>
-            <Link to="/addBlog" id="add-blog-button">
-              Add A New Blog
+            <Link to="/addBlog" id="add-blog-nav">
+              Add Blog Post
             </Link>
           </li>
           <li>
@@ -27,6 +27,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+        <span className="mobile-menu"><i className="fas fa-bars"></i></span>
       </nav>
       {/* <div className="login">
         <li><a id="log-in" href="#">Log in</a></li>
