@@ -61,25 +61,30 @@ body {
 
 #add-blog-button {
   align-self: center;
-  padding: 11px 10px;
+  padding: 11px 8px;
   color: black;
 }
 
 #add-blog-button:hover {
+  padding-top: 13px;
+  padding-bottom: 14px;
+  background: rgba(49, 49, 49, 0.911);
   color: #fff;
 }
-#add-blog-button::after {
-  background: #222;
-  position: relative;
-  height: 100%;
-  width: 100;
-  top: 0%;
+#add-blog-button::before {
+  margin: 0;
+  padding: 20px;
+  position: absolute;
+  height: 130%;
+  width: 140%;
+  top: -1000%;
   z-index: -1;
+  content:"";
 }
-#add-blog-button::after:hover {
+#add-blog-button::before:hover {
   background: #222;
   color: #fff;
-  top: 100%;
+  top: -0%;
 }
 #about {
   background: #ffe046;
