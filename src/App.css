@@ -11,8 +11,9 @@ body {
 
 .navbar nav {
   position: relative;
-  margin: 40px auto;
+  margin: 20px auto;
   padding-left: 10px;
+  padding-bottom: 10px;
   margin-top: 0;
   box-sizing: border-box;
   border-bottom: 1px solid #eee;
@@ -42,43 +43,68 @@ body {
   text-decoration: none;
   
   margin: 0;
-  padding: 23px 5px;
+  padding: 21px 5px;
 
   width:80px;
   color: #fff;
   display: inline-block;
   padding: 0 auto;
-  text-shadow: 1px 1px 5px rgb(199, 199, 199);
+  /* text-shadow: 1px 1px 5px rgb(199, 199, 199); */
   transition: all 0.2s ease-out;
 }
 
 #nav-logo {
   font-family: Shippori Mincho;
   display: inline-block;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
+#add-blog-button {
+  align-self: center;
+  padding: 11px 10px;
+  color: black;
+}
+
+#add-blog-button:hover {
+  color: #fff;
+}
+#add-blog-button::after {
+  background: #222;
+  position: relative;
+  height: 100%;
+  width: 100;
+  top: 0%;
+  z-index: -1;
+}
+#add-blog-button::after:hover {
+  background: #222;
+  color: #fff;
+  top: 100%;
+}
 #about {
   background: #ffe046;
   right: 0%;
 }
 
 #about:hover {
-  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 25px
 }
 #contact {
   background: #ac4ae6;
   right: 0%;
 }
 #contact:hover {
-  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 #blog {
   background: #08e47d; 
   right: 0%;
 }
 #blog:hover {
-  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 25px
 }
 #log-in {
   background: #fc2403;
