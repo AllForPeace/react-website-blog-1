@@ -1,18 +1,23 @@
 import { useState } from 'react'
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 
 const Navbar = () => {
 
   const [mobileMenuClicked, setMclick] = useState(false);
+  const history = useHistory();
 
   const mobileMenuExpand = () => {
     setMclick(!mobileMenuClicked);
   };
+
+  const logoClicked = () => {
+    history.push('/');
+  }
   
   return (
     <div className="navbar">
       <nav>
-        <h2 id="nav-logo">Nischal's Blog</h2>
+        <h2 id="nav-logo" onClick={logoClicked}>Nischal's Blog</h2>
         <ul class="collapse">
           <li>
             <Link to="/addBlog" id="add-blog-nav">

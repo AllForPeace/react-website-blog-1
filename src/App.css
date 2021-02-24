@@ -65,7 +65,7 @@
   #add-blog-nav:hover {
     padding-top: 13px;
     padding-bottom: 14px;
-    background: rgba(170, 170, 170, 0.795);
+    background: rgba(136, 136, 136, 0.795);
     color: #fff;
   }
   #add-blog-nav::before {
@@ -150,6 +150,9 @@ i {
   /* display: inline; */
 }
 
+#nav-logo:hover {
+  cursor: pointer;
+}
 .mobile-menu  {
   position: absolute;
   top: 19%;
@@ -171,6 +174,10 @@ i {
   width: 80%;
 }
 
+.homePage a{
+  text-decoration: none;
+  color: black;
+}
 /* Individual blog styling */
 
 .single-blog {
