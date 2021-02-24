@@ -18,24 +18,24 @@ const Navbar = () => {
     <div className="navbar">
       <nav>
         <h2 id="nav-logo" onClick={logoClicked}>Nischal's Blog</h2>
-        <ul class="collapse">
+        <ul className="collapse">
           <li>
             <Link to="/addBlog" id="add-blog-nav">
               Add Blog Post
             </Link>
           </li>
           <li>
-            <Link id="about" href="#">
+            <Link id="about" to="#">
               About
             </Link>
           </li>
           <li>
-            <Link id="contact" href="#">
+            <Link id="contact" to="#">
               Contact
             </Link>
           </li>
           <li>
-            <Link id="blog" href="#">
+            <Link id="blog" to="#">
               Blog
             </Link>
           </li>
