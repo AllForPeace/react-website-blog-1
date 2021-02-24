@@ -1,8 +1,382 @@
-@media (min-width: 900px)
+body {
+  margin: 0;
+  padding: 0 3px;
+}
+
+.App {
+  margin: 0 auto;
+  padding: 0;
+}
+
+i {
+  transition: all 0.3s ease-out;
+}
+/* Nav Styling Mobile */
+.navbar nav {
+  position: relative;
+  margin: 20px auto;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+#nav-logo {
+  font-family: Shippori Mincho;
+  margin: 8px 0;
+  /* display: inline; */
+}
+
+#nav-logo:hover {
+  cursor: pointer;
+}
+.mobile-menu  {
+  position: absolute;
+  top: 19%;
+  right: 5%;
+  font-size: 4vh;
+}
+
+.mobile-menu:hover{
+  cursor: pointer;
+}
+.collapse {
+  display: none;
+}
+/* Home Page styling */
+
+.homePage, .add-blog {
+  margin: 20px auto;
+  padding-left: 10px;  
+  width: 100%;
+}
+
+.homePage a{
+  text-decoration: none;
+  color: black;
+}
+/* Individual blog on home page styling */
+
+.single-blog {
+margin: 30px 0;
+border-bottom: 1px solid #eee;
+background: rgb(255, 255, 255);
+}
+
+.homePage h1{
+  font-size: 40px;
+}
+.single-blog h2.title {
+  font-family: Hind;
+  font-weight: 300;
+font-size: 30px;
+margin-bottom: 0;
+}
+
+.single-blog .body {
+  margin-bottom: 30px;
+  font-family: Hind;
+  font-weight: 300;
+  background-color: #fcfcfc;
+}
+
+.single-blog .posted-on {
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.single-blog .author {
+  color: #bbb;
+  margin: 40px 10px;
+  font-size: 13px;
+}
+
+/* Individual Blog Page  */
+
+.individual-blog {
+  margin: 0 auto;
+  padding: 0 50px;
+background: #fcfcfc;  
+font-family: Hind;
+} 
+
+.individual-blog h2.blog-title {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.blog-meta {
+  font-size: 15px;
+  margin-top: 5px;
+  color: rgb(116, 116, 116)
+}
+
+.individual-blog .blog-body {
+  margin-top: 50px;
+}
+
+.individual-blog .blog-author {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #333;
+}
+/* Add Blog Page */
+
+.add-blog h2{
+  font-family: Shippori Mincho;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 23px;
+}
+.add-blog form {
+  margin: 20px auto;
+  /* padding: 0 100px; */
+  width: 55%;
+}
+
+
+.add-blog label {
+  font-family: Shippori Mincho;
+  font-size: 15px;
+}
+
+.add-blog form input, textarea {
+  width: 50%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: Times New Roman;
+  font-size: 15px;
+  border: 2px solid #fbfbfb;
+  border-radius: 2px;
+  display: block;
+}
+
+.add-blog #blog-title {
+  width: 80%;
+}
+.add-blog #blog-body {
+  font-size: 13px;  
+  width: 100%;
+}
+
+.add-blog #blog-author {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+
+}
+
+.add-blog #blog-author-label {
+  font-size: 16px;
+}
+
+.add-blog button {
+  display: block;
+  margin: auto;
+}
+
+@media (min-width:600px)
 {
+  /* body {
+    margin: 0;
+    padding: 0 3px;
+  }
+
+  .App {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  i {
+    transition: all 0.3s ease-out;
+  }
+  Nav Styling Mobile */
+  .navbar nav {
+    /* position: relative;
+    margin: 20px auto;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee; */
+    width: 90%;
+  }
+
+  /* #nav-logo {
+    font-family: Shippori Mincho;
+    margin: 8px 0;
+    display: inline; //keep commented
+  }
+
+  #nav-logo:hover {
+    cursor: pointer;
+  }
+  .mobile-menu  {
+    position: absolute;
+    top: 19%;
+    right: 5%;
+    font-size: 4vh;
+  }
+
+  .mobile-menu:hover{
+    cursor: pointer;
+  }
+  */ .collapse {
+    display: none;
+  }  /*
+  Home Page styling */
+
+  .homePage, .add-blog {
+    /* margin: 20px auto;
+    padding-left: 10px;   */
+    width: 90%;
+  }
+
+ /* .homePage a{
+    text-decoration: none;
+    color: black;
+  } */
+  /* Individual blog on home page styling */
+
+  /* .single-blog {
+  margin: 30px 0;
+  border-bottom: 1px solid #eee;
+  background: rgb(255, 255, 255);
+  }
+
+  .homePage h1{
+    font-size: 40px;
+  }
+  .single-blog h2.title {
+    font-family: Hind;
+    font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 0;
+  }
+
+  .single-blog .body {
+    margin-bottom: 30px;
+    font-family: Hind;
+    font-weight: 300;
+    background-color: #fcfcfc;
+  }
+
+  .single-blog .posted-on {
+    color: #bbb;
+    margin-bottom: 30px;
+  }
+
+  .single-blog .author {
+    color: #bbb;
+    margin: 40px 10px;
+    font-size: 13px;
+  }
+
+  /* Individual Blog Page  */
+
+  /*.individual-blog {
+    margin: 0 auto;
+    padding: 0 50px;
+  background: #fcfcfc;  
+  font-family: Hind;
+  } 
+
+  .individual-blog h2.blog-title {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
+
+  .blog-meta {
+    font-size: 15px;
+    margin-top: 5px;
+    color: rgb(116, 116, 116)
+  }
+
+  .individual-blog .blog-body {
+    margin-top: 50px;
+  }
+
+  .individual-blog .blog-author {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #333;
+  }
+  /* Add Blog Page */
+
+  /*.add-blog h2{
+    font-family: Shippori Mincho;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 23px;
+  }
+  .add-blog form {
+    margin: 20px auto;
+    /* padding: 0 100px; */
+   /* width: 55%;
+  }
+
+
+  .add-blog label {
+    font-family: Shippori Mincho;
+    font-size: 15px;
+  }
+
+  .add-blog form input, textarea {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family: Times New Roman;
+    font-size: 15px;
+    border: 2px solid #fbfbfb;
+    border-radius: 2px;
+    display: block;
+  }
+
+  .add-blog #blog-title {
+    width: 80%;
+  }
+  .add-blog #blog-body {
+    font-size: 13px;  
+    width: 100%;
+  }
+
+  .add-blog #blog-author {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+
+  }
+
+  .add-blog #blog-author-label {
+    font-size: 16px;
+  }
+
+  .add-blog button {
+    display: block;
+    margin: auto;
+  } */
+}
+
+@media (min-width: 768px)
+{
+  
+  body {
+    margin: 0;
+    padding: 0 3px;
+  }
+
+  .App {
+    margin: 0 auto;
+    padding: 0 50px;
+  }
   /* Navbar styling */
 
   .navbar nav {
+    width: 80%;
     position: relative;
     margin: 20px auto;
     padding-left: 10px;
@@ -10,7 +384,6 @@
     margin-top: 0;
     box-sizing: border-box;
     border-bottom: 1px solid #eee;
-    width: 80%;
   }
 
   .login {
@@ -116,153 +489,17 @@
     background: #00ab1c;
     right: 0%;
   }
-}
 
+  /* Home Page Desktop  */
+  .homePage, .add-blog {
+    margin: 20px auto;
+    padding-left: 10px;  
+    width: 80%;
+  }
 
-body {
-  margin: 0;
-  padding: 0 3px;
+  /* Individual Blog Page Desktop  */
+  .individual-blog h2.blog-title {
+    margin-bottom: 0px;
+    margin-top: 60px;
+  }
 }
-
-.App {
-  margin: 0 auto;
-  padding: 0 50px;
-}
-
-i {
-  transition: all 0.3s ease-out;
-}
-/* Nav Styling Mobile */
-.navbar nav {
-  position: relative;
-  margin: 20px auto;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  margin-top: 0;
-  box-sizing: border-box;
-  border-bottom: 1px solid #eee;
-  width: 80%;
-}
-
-#nav-logo {
-  font-family: Shippori Mincho;
-  margin: 8px 0;
-  /* display: inline; */
-}
-
-#nav-logo:hover {
-  cursor: pointer;
-}
-.mobile-menu  {
-  position: absolute;
-  top: 19%;
-  right: 5%;
-  font-size: 4vh;
-}
-
-.mobile-menu:hover{
-  cursor: pointer;
-}
-.collapse {
-  display: none;
-}
-/* Home Page styling */
-
-.homePage, .add-blog {
-  margin: 20px auto;
-  padding-left: 10px;  
-  width: 80%;
-}
-
-.homePage a{
-  text-decoration: none;
-  color: black;
-}
-/* Individual blog styling */
-
-.single-blog {
- margin: 30px 0;
-border-bottom: 1px solid #eee;
-background: rgb(255, 255, 255);
-}
-
-.single-blog h2.title {
-  font-family: Hind;
-  font-weight: 300;
- font-size: 50px;
- margin-bottom: 0;
-}
-
-.single-blog .body {
-  margin-bottom: 30px;
-  font-family: Hind;
-  font-weight: 300;
-  background-color: #fcfcfc;
-}
-
-.single-blog .posted-on {
-  color: #bbb;
-  margin-bottom: 30px;
-}
-
-.single-blog .author {
-  color: #bbb;
-  margin: 40px 10px;
-  font-size: 13px;
-}
-
-/* Add Blog Styles */
-
-.add-blog h2{
-  font-family: Shippori Mincho;
-  text-align: center;
-  margin-top: 40px;
-  font-size: 23px;
-}
-.add-blog form {
-  margin: 20px auto;
-  /* padding: 0 100px; */
-  width: 55%;
-}
-
-
-.add-blog label {
-  font-family: Shippori Mincho;
-  font-size: 15px;
-}
-
-.add-blog form input, textarea {
-  width: 50%;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  font-family: Times New Roman;
-  font-size: 15px;
-  border: 2px solid #fbfbfb;
-  border-radius: 2px;
-  display: block;
-}
-
-.add-blog #blog-title {
-  width: 80%;
-}
-.add-blog #blog-body {
-  font-size: 13px;  
-  width: 100%;
-}
-
-.add-blog #blog-author {
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 15px;
-
-}
-
-.add-blog #blog-author-label {
-  font-size: 16px;
-}
-
-.add-blog button {
-  display: block;
-  margin: auto;
-}
-

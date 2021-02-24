@@ -15,11 +15,11 @@ const SingleBlogPage = ({match}) => {
     }, []);
 
     return ( 
-        <div className="single-blog">
+        <div className="individual-blog">
             <h2 className="blog-title"> {blog.title} </h2>
-            <h3 className="blog-meta"> {blog.posted} </h3>
+            <p className="blog-meta"> Posted on: {blog.posted} </p>
             <p className="blog-body"> {blog.body} </p>
-            <h4 className="blog-author"> {blog.author} </h4>
+            <p className="blog-author"> Authored by: {blog.author} </p>
 
             <div className="comments">
 
