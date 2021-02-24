@@ -224,9 +224,9 @@ font-family: Hind;
   .mobile-menu:hover{
     cursor: pointer;
   }
-  */ .collapse {
+   .collapse {
     display: none;
-  }  /*
+  }  
   Home Page styling */
 
   .homePage, .add-blog {
@@ -391,16 +391,6 @@ font-family: Hind;
     float: right;
   }
 
-  .navbar ul {
-    display: flex;
-    float: right;
-    margin: 0;
-    padding: 0;
-  }
-  .navbar li {
-    text-decoration: none;
-    display: inline-block;
-  }
   .navbar a {
     position: relative;
     font-family: Quicksand;
@@ -417,10 +407,6 @@ font-family: Hind;
     padding: 0 auto;
     /* text-shadow: 1px 1px 5px rgb(199, 199, 199); */
     transition: all 0.2s ease-out;
-  }
-
-  .mobile-menu  {
-    display: none;
   }
 
   #nav-logo {
@@ -490,6 +476,10 @@ font-family: Hind;
     right: 0%;
   }
 
+  .collapse {
+    display: none;
+  }
+
   /* Home Page Desktop  */
   .homePage, .add-blog {
     margin: 20px auto;
@@ -502,4 +492,23 @@ font-family: Hind;
     margin-bottom: 0px;
     margin-top: 60px;
   }
+}
+
+@media (min-width: 900px)
+{
+  .mobile-menu  {
+    display: none;
+  }
+
+  .navbar ul {
+    display: flex;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar li {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
 }
