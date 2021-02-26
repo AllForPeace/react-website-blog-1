@@ -1,12 +1,18 @@
 import React from "react";
 import { Button } from './Button'
+
+//content and styling
+import video from '../videos/video-2.mp4'
 import './Hero.css'
 import '../App.css'
 
 const Hero = () => {
   return (
     <div className="hero-container">
-      <video src="../videos/video-2.mp4" autoPlay loop muted></video>
+      <video preload="auto" controls autoPlay loop muted>
+      <source src={video} type="video/webm"></source> Video Ain
+      t Wokring
+      </video>
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className="hero-btns">
