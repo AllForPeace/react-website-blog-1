@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {  useHistory } from 'react-router-dom'
 
 const AddBlog = () => {
   const [title, setTitle] = useState("");
@@ -6,6 +7,20 @@ const AddBlog = () => {
   const [author, setAuthor] = useState("Yoshi");
   const [clicked, setClicked] = useState(false);
 
+  const history = useHistory();
+
+  function handlePostSubmit (e) {
+    e.preventDefault();
+    setClicked(true)
+    let blog = { title, body, author, posted: new Date()};
+    console.log('blog and contents: ' + blog);
+    fetch('http://localhost:8000/blogs/', {
+      method: "POST",
+      headers : {'content-type': 'application/json' },
+      body: JSON.stringify(blog)
+    })
+    .then(() => history.push('/'))
+  }
 
   return (
     <div className="add-blog">
@@ -34,7 +49,7 @@ const AddBlog = () => {
           onChange={(e) => setAuthor(e.target.value)}
           value={author}
         />
-        <button onClick={() => setClicked(true)}className={"add-blog-btn " + clicked}>Add Blog</button>
+        <button onClick={handlePostSubmit}className={"add-blog-btn " + clicked}>Add Blog</button>
       </form>
     </div>
   );

@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom'
 
 const SingleBlogPage = ({match}) => {
 
     const [blog, setBlog] = useState('');
+    const history = useHistory();
+
     console.log(match);
     // fetch data from params and blogs
     useEffect(() => {
@@ -14,13 +17,20 @@ const SingleBlogPage = ({match}) => {
         })
     }, []);
 
+    const handleDelete = () => {
+        fetch('http://localhost:8000/blogs/' + blog.id, {
+            method: "DELETE"
+        })
+        .then(() => history.push('/'))
+    };
+
     return ( 
         <div className="individual-blog">
             <h2 className="blog-title"> {blog.title} </h2>
             <p className="blog-meta"> Posted on: {blog.posted} </p>
             <p className="blog-body"> {blog.body} </p>
             <p className="blog-author"> Authored by: {blog.author} </p>
-
+            <button onClick={handleDelete}> Delete Blog </button>
             <div className="comments">
 
             </div>
