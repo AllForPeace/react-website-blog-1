@@ -44,15 +44,20 @@ i {
 }
 
 ul.mobile-menu{
-  position: relative;
+  position: absolute;
+  top: 39px;
   left: -100%;
-  transition: 0.2s all ease-out;
+  transition: all 0.5s ease-out;
+  z-index: 1;
 }
 
 ul.mobile-menu.clicked {
   display: block;
   background:rgb(22, 22, 22);
   left: 0;
+  width: 100%;
+  height: 90vh;
+  transition: all 0.5s ease-out;
 }
 .collapse {
   display: none;
