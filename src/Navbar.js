@@ -40,8 +40,31 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+        
         <span className={"mobile-menu "} onClick={mobileMenuExpand}><i className={ mobileMenuClicked ? "fas fa-times" : "fas fa-bars"}></i></span>
       </nav>
+      <ul className={"mobile-menu " + (mobileMenuClicked ? "clicked" : "")}>
+          <li>
+            <Link to="/addBlog" id="add-blog-nav">
+              Add Blog Post
+            </Link>
+          </li>
+          <li>
+            <Link id="about" to="#">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link id="contact" to="#">
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link id="blog" to="#">
+              Blog
+            </Link>
+          </li>
+        </ul>
       {/* <div className="login">
         <li><a id="log-in" href="#">Log in</a></li>
           <li><a id="sign-up" href="#">Sign up</a></li>
