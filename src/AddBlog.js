@@ -12,7 +12,7 @@ const AddBlog = () => {
   function handlePostSubmit (e) {
     e.preventDefault();
     setClicked(true)
-    let blog = { title, body, author, posted: new Date()};
+    let blog = { title, body, author, posted: new Date().toLocaleString()};
     console.log('blog and contents: ' + blog);
     fetch('http://localhost:8000/blogs/', {
       method: "POST",
